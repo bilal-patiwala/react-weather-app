@@ -3,13 +3,95 @@
   padding: 0;
 }
 
-.app{
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(to top left, #4facfe 0%, #00f2fe 100%);
-}
 
 .container{
   width: 70%;
   margin: auto;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px 10px 0px ;
+}
+
+.header .search-form{
+  flex-basis: 70%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-bar{
+  width: 90%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: 1em;
+}
+
+.search-btn{
+  background: blue;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.list-container{
+  margin-top: 20px;
+}
+
+.city-weather-info{
+  margin-bottom: 20px;
+  border-radius: 10px;
+  height: 215px;
+  background-image: url("../src/assets/sunny.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75); */
+  box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+  padding-left: 50px;
+}
+
+.weather{
+  padding-top: 40px;
+  font-size: 2em;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+}
+
+.city-info{
+  color: white;
+  padding-top: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.city-info > p {
+  font-size: 4em;
+}
+
+.city-info > hr{
+  height: 50px;
+  border: 1 solid white;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.city-info > div{
+  font-size: 20px;
+}
+
+.deg{
+  font-size: 32px;
+  padding-left: 5px;
 }

@@ -1,4 +1,5 @@
 import "./App.css";
+import CityWeatherList from "./components/CityWeatherList";
 import { Header } from "./components/Header";
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
     <div className="app">
       <div className="container">
         <Header />
+        <CityWeatherList/>
       </div>
     </div>
   );
