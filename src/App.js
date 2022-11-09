@@ -4,7 +4,7 @@ import "./App.css";
 const App = () => {
   const API_KEY = process.env.REACT_APP_SECURED_API_KEY
   let [input, setInput] = useState("")
-  let [query, setQuery] = useState(["baroda"])
+  let [query, setQuery] = useState(["istanbul"])
   const [city, setCity] = useState([])
   const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${API_KEY}`
 
